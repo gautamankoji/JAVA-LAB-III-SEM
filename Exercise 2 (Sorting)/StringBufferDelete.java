@@ -29,3 +29,11 @@ public class StringBufferDelete {
         }
     }
 }
+
+/*	OUTPUT:
+
+Enter a string: Java Programming
+Enter the character to remove: a
+Resulting string after removing 'a': Jv Progrmming
+
+*/
