@@ -1,6 +1,4 @@
-/* Java program to display default value of all primitive data type of Java */
-
-
+/* 1.(a) Java program to display default value of all primitive data type of Java */
 
 /* AUTHOR
  * Gautam Ankoji 

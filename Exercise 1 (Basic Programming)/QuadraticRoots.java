@@ -1,4 +1,4 @@
-/* Java program that display the roots of a quadratic equation */
+/* 1.(b) Java program that display the roots of a quadratic equation */
 
 /* AUTHOR
  * Gautam Ankoji 

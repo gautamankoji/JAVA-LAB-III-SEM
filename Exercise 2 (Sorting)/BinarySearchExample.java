@@ -1,4 +1,4 @@
-/* Java program that performs a binary search */
+/* 2.(a) Java program that performs a binary search */
 
 /* AUTHOR
  * Gautam Ankoji 

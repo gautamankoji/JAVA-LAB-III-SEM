@@ -1,3 +1,5 @@
+<!-- 1.(d) Case Study: The Significance of `public static void main(String[] args)` in a Java Program -->
+
 # Case Study: The Significance of `public static void main(String[] args)` in a Java Program
 
 In the context of a simple Java program structure, the `public static void main(String[] args)` method plays a crucial role in initiating and executing Java applications. This case study delves into the various steps involved and highlights the importance of this method.

@@ -1,4 +1,4 @@
-/* Java program to take input for the speeds of five bikers, calculate the average speed, and then determine and display the speeds of the qualifying racers */
+/* 1.(c) Java program to take input for the speeds of five bikers, calculate the average speed, and then determine and display the speeds of the qualifying racers */
 
 /* AUTHOR
  * Gautam Ankoji 

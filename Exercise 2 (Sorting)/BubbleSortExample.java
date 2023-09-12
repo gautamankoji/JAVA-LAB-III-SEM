@@ -1,3 +1,5 @@
+/* 2.(b) Java program to sort for an element in a given list of elements using bubble sort */
+
 import java.util.Scanner;
 
 public class BubbleSortExample {

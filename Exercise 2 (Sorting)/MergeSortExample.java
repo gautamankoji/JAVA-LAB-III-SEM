@@ -1,4 +1,4 @@
-/* Java program that implements the merge sort algorithm to sort an array of integers */
+/* 2.(c) Java program that implements the merge sort algorithm to sort an array of integers */
 
 /* AUTHOR
  * Gautam Ankoji 

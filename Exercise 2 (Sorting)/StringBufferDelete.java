@@ -1,3 +1,10 @@
+/* 2.(d) Java program that uses a `StringBuffer` to delete or remove characters from a given string */
+
+/* AUTHOR
+ * Gautam Ankoji 
+ * Tuesday 12-09-2023 16:49:20 
+*/
+
 import java.util.Scanner;
 
 public class StringBufferDelete {
