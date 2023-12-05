@@ -8,26 +8,27 @@
 class A {
     int n;
     boolean b = false;
+
     synchronized int get() {
-        if (!b) {
+        while (!b) {
             try {
                 wait();
-            } catch (Exception e) {
-                System.out.println(e);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-            System.out.println("Got:" + n);
-            b = false;
-            notify();
-            return n;
         }
-        return 0;
+        System.out.println("Got:" + n);
+        b = false;
+        notify();
+        return n;
     }
+
     synchronized void put(int n) {
-        if (b) {
+        while (b) {
             try {
                 wait();
-            } catch (Exception e) {
-                System.out.println(e);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
         this.n = n;
@@ -40,11 +41,13 @@ class A {
 class Producer implements Runnable {
     A a1;
     Thread t1;
+
     Producer(A a1) {
         this.a1 = a1;
         t1 = new Thread(this);
         t1.start();
     }
+
     public void run() {
         for (int i = 1; i <= 10; i++) {
             a1.put(i);
@@ -55,11 +58,13 @@ class Producer implements Runnable {
 class Consumer implements Runnable {
     A a1;
     Thread t1;
+
     Consumer(A a1) {
         this.a1 = a1;
         t1 = new Thread(this);
         t1.start();
     }
+
     public void run() {
         for (int j = 1; j <= 10; j++) {
             a1.get();
@@ -67,13 +72,14 @@ class Consumer implements Runnable {
     }
 }
 
-public class ProducerConsumerproblem {
+public class ProducerConsumerProblem {
     public static void main(String args[]) {
         A a1 = new A();
         Producer p1 = new Producer(a1);
         Consumer c1 = new Consumer(a1);
     }
 }
+
 
 /*	OUTPUT:
 
